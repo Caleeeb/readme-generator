@@ -28,7 +28,7 @@ const questions = [
     {
         type: 'list',
         message: "Choose the license for your project.",
-        choices: ['MIT', 'Apache 2.0', 'GNU v3.0', 'Boost Software License', 'Creative Commons Zero v1.0', 'Eclise Public Lincense 2.0', 'Mozilla Public License 2.0'],
+        choices: ['MIT', 'Apache 2.0', 'GNU v3.0', 'Boost Software License', 'Creative Commons Zero v1.0', 'Eclise Public Lincense 2.0', 'Mozilla Public License 2.0', 'None'],
         name: 'license'
     },
     {
@@ -58,7 +58,14 @@ function writeToFile(fileName, data) {
 }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    inquirer
+        .prompt(questions)
+        .then((answers) => {
+            console.log('Gernerating markdown.');
+            writeToFile('./README.md', generateMarkdown({ answers }));
+        })
+}
 
 // Function call to initialize app
 init();
