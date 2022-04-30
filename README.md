@@ -1,16 +1,16 @@
 <h1 id='title'> readme-generator </h1>
 
-<!-- [Github License](https://img.shields.io/badge/license-MIT-blue.svg) -->
+[Github License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 <h2 id='contents'> Table of Contents</h2>
 
-*[Description](#description)
-*[Recording](#recording)
-*[Technology](#technology)
-*[Installation](#installation)
-*[Usage](#usage)
-*[References](#references)
-*[Contact](#contact)
+* [Description](#description)
+* [Recording](#recording)
+* [Technology](#technology)
+* [Installation](#installation)
+* [Usage](#usage)
+* [References](#references)
+* [Contact](#contact)
 
 <h2 id='description'> Description</h2>
 
@@ -50,8 +50,9 @@ THEN I am taken to the corresponding section of the README
 
 <h2 id='technology'> Technology</h2>
 
--Node.js
--Inquirer.js
+- Node.js
+
+- Inquirer.js
 
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
 
@@ -67,11 +68,12 @@ Run command 'npm i inquirer' to install Inquirer.js.
 
 <h2 id='references'> References</h2>
 
-\`\`\`
--[Inquirer.js](https://www.npmjs.com/package/inquirer)
--[Node.js](https://nodejs.org/en/docs/)
--[How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
-\`\`\`
+- [Inquirer.js](https://www.npmjs.com/package/inquirer)
+
+- [Node.js](https://nodejs.org/en/docs/)
+
+- [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
+
 
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
 

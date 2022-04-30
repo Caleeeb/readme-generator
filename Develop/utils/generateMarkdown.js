@@ -1,4 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (license !== "None") {
@@ -7,16 +7,16 @@ function renderLicenseBadge(license) {
   return ''
 }
 
-// TODO: Create a function that returns the license link
+// Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license !== "None") {
-    return (license + `\n* [License](#license)\n`)
+    return (`* [${license} License](#license)`)
   }
   return ''
 }
 
-// TODO: Create a function that returns the license section of README
+// Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== "None") {
@@ -31,7 +31,7 @@ function renderLicenseSection(license) {
   return ''
 }
 
-// TODO: Create a function to generate markdown for README
+// Create a function to generate markdown for README
 function generateMarkdown(data) {
   return (
 `<h1 id='title'> ${data.projectName} </h1>
@@ -40,14 +40,13 @@ ${renderLicenseBadge(data.license)}
 
 <h2 id='contents'> Table of Contents </h2>
 
-*[Description](#description)
-${renderLicenseLink(data.license)}
-*[Installation](#installation)
-*[Usage](#usage)
-*[Tests](#tests)
-*[Contributors](#contributors)
-*[Questions](#questions) 
-
+* [Description](#description)\n
+${renderLicenseLink(data.license)}\n
+* [Installation](#installation)\n
+* [Usage](#usage)\n 
+* [Tests](#tests)\n
+* [Contributors](#contributors)\n
+* [Questions](#questions) 
 
 <h2 id='description'> Description </h2>
 
@@ -55,7 +54,6 @@ ${data.description}
 
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
 
-${renderLicenseBadge(data.license)}
 ${renderLicenseSection(data.license)}
 
 <p style='text-align: right;'><a href='#title'>Back to top</a></p>
