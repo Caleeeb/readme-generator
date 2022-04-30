@@ -27,7 +27,7 @@ const questions = [
     },
     {
         type: 'list',
-        message: "Choose the license for your project.",
+        message: "Choose the license for your project:",
         choices: ['MIT', 'Apache 2.0', 'GNU v3.0', 'Boost Software License', 'Creative Commons Zero v1.0', 'Eclise Public Lincense 2.0', 'Mozilla Public License 2.0', 'None'],
         name: 'license'
     },
@@ -47,14 +47,16 @@ const questions = [
         name: 'usage'
     },
     {
-        type: 'input'
+        type: 'input',
+        message: "What information does a developer need to know about when using the repo?",
+        name: 'repoInfo'
     }
 
 ];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    return fs.writeFileSync(path.join())
+    return fs.writeFileSync(fileName, data);
 }
 
 // TODO: Create a function to initialize app
