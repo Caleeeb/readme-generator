@@ -1,5 +1,7 @@
 <h1 id='title'> README Generator </h1>
 
+[Video on how to use the README Generator](https://drive.google.com/file/d/1T2GByEEoVnrp9pbNWBRqWFAhIasHS7vA/view)
+
 ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 <h2 id='contents'> Table of Contents</h2>
