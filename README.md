@@ -1,6 +1,6 @@
-<h1 id='title'> readme-generator </h1>
+<h1 id='title'> README Generator </h1>
 
-[Github License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 <h2 id='contents'> Table of Contents</h2>
 
