@@ -3,6 +3,8 @@ const inquirer = require('inquirer');
 
 const fs = require('fs');
 
+const generateMarkdown = require('./utils/generateMarkdown');
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -23,7 +25,7 @@ const questions = [
     {
         type: 'input',
         message: "Describe you project.",
-        name: 'title',
+        name: 'description',
     },
     {
         type: 'list',
@@ -48,8 +50,8 @@ const questions = [
     },
     {
         type: 'input',
-        message: "What information does a developer need to know about when using the repo?",
-        name: 'repoInfo'
+        message: "Give the email(s) of any contributors:",
+        name: 'contributors'
     }
 
 ];
@@ -64,8 +66,8 @@ function init() {
     inquirer
         .prompt(questions)
         .then((answers) => {
-            console.log('Gernerating markdown.');
-            writeToFile('./README.md', generateMarkdown({ answers }));
+            console.log('Gernerating markdown...');
+            writeToFile('./README.md', generateMarkdown(answers));
         })
 }
 
